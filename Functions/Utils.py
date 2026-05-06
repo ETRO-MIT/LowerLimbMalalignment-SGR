@@ -64,18 +64,7 @@ def make_results_dir(path_to_dir):
         os.mkdir(path_to_dir)
 
 
-# # Create a directory where to store the results for a specific case
-# def make_subject_results_dir(path_to_dir):
-#     # Inspect if path points to a file with extension
-#     if os.path.isfile(Path(path_to_dir)):
-#         tail, head = os.path.split(path_to_dir)
-#         raw_file_id = head.split('.')[0]
-#         new_path_to_dir = os.path.join(tail, raw_file_id)
-#         make_results_dir(new_path_to_dir)
-#     else:
-#         # The path points to a directory
-#         make_results_dir(path_to_dir)
-
+# Create a directory where to store the results for a specific case
 def make_subject_results_dir(path_to_dir):
     path = Path(path_to_dir)
 
@@ -84,6 +73,8 @@ def make_subject_results_dir(path_to_dir):
         make_results_dir(new_path_to_dir)
     else:
         make_results_dir(path)
+
+
 # Save the malalignment results and the distance measures in a .csv file
 def save_results(right_leg_geometrics, left_leg_geometrics, output_path, image_id):
     file_name = image_id + '.csv'
