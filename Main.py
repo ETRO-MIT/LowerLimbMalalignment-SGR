@@ -216,9 +216,8 @@ def main(path_to_data: Path, is_dicom: bool = True):
     print(f"Elapsed time: {main_elapsed:.4f} seconds")
 
 
+# Run main function
 if __name__ == '__main__':
-    # main_dir_images = Path('/Users/sebastian/Documents/VUB/PhD/Deliverables/LLM-SGR/DemoImages/Demo3')
-    # dicom_images = "False"
     # Parse arguments
     main_dir_images = Path(sys.argv[1])  # Path to the directory containing the images
     dicom_images = sys.argv[2]  # Indicate if the images are in DICOM or non-medical format
