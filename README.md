@@ -2,7 +2,7 @@
 The goal of this repository is to support research on lower-limb malalignment assessment through automated anatomical 
 landmark localization in full lower-limb (FLL) radiographs. It allows users to evaluate the provided pre-trained models 
 on their own data. Due to third-party data-sharing restrictions, the datasets used for training and evaluation cannot be 
-publicly released. However, pre-trained model weights are available (see the [instructions](#download-weights) on how to 
+publicly released. However, pre-trained model weights are available (see the [instructions](#ii-download-weights) on how to 
 download them). Scripts are provided with clear documentation on usage, expected inputs, and outputs.
 
 ⚠️ **Notes:** 
